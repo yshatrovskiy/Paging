@@ -13,6 +13,7 @@ public class Page {
 	static int[] checkValues;
 	static int memorySize, numberOfPrograms;
 	static String inputFile = "paging1-input.txt";
+	static String outputFile = "paging1-output.txt";
 	
 	public static void main(String args[]) throws FileNotFoundException {
 		
@@ -43,7 +44,7 @@ public class Page {
 			e1.printStackTrace();
 		}
 		
-		OutputStream output = new FileOutputStream("paging1-output.txt");
+		OutputStream output = new FileOutputStream(outputFile);
 		PrintStream printStream = new PrintStream(output);
 		
 		printStream.println("Input file: " + inputFile);
